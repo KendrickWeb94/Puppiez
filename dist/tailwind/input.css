@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .smooth {
+        @apply transition-all delay-500 duration-500 ease-in-out;
+    }
+    .contain {
+        @apply mx-auto 
+    }
+}
