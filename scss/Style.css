@@ -45,4 +45,92 @@ table {
 input {
   -webkit-appearance: none;
   border-radius: 0;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins/Poppins-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins/Poppins-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins/Poppins-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins/Poppins-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+.font_r {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.font_m {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.font_sb {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.font_b {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.font_eb {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+}
+
+.font_blk {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+}
+
+.font_l {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+.font_el {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
 }/*# sourceMappingURL=Style.css.map */
