@@ -5,27 +5,915 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="/scss/Style.css">
-    <link rel="stylesheet" href="/dist/tailwind/output.css">
-    <link rel="stylesheet" href="/dist/icons/font-awesome.css">
-    <!-- <link rel="stylesheet" href="/dist/icons/boxicons.css"> -->
+    <link rel="stylesheet" href="./scss/Style.css">
+    <link rel="stylesheet" href="./dist/tailwind/output.css">
+    <link rel="stylesheet" href="./dist/icons/font-awesome.css">
+    <link rel="stylesheet" href="./dist/icons/boxicons.min.css">
+    <link rel="stylesheet" href="./dist/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./dist/owl-carousel/owl.theme.default.min.css">
 
 </head>
 
 <body class="h-auto ">
 
     <main class="header_bg overflow-hidden relative">
-        <div class="absolute w-full h-screen top-0 bg-primary/10 "></div>
-    </main>
-    <!-- <i class="bx bx-alarm"></i> -->
+        <img src="./assets/img/homepage/box-top-left.svg" alt="" class="-z-1 absolute top-0 left-0">
+        <img src="./assets/img/homepage/box-bottom-left.svg" alt="" class="-z-1 absolute bottom-0 left-0">
+        <header class="py-3 relative z-lg container_custom mx-auto flex items-center ">
+            <nav class="w-full absolute top-0 my-4 flex items-center justify-between gap-3">
+                <a href="./index.html">
+                    <h1 class=" text-dark-blue font_sb text-3xl">Munito</h1>
+                </a>
 
-    <i class="fa fa-home"></i>
+                <div class="items-center gap-6 ds:hidden lg:flex">
+                    <ul class=" list-none text-sm px-5 flex items-center justify-center gap-6">
+                        <li class=" font_sb hover:text-primary smooth text-dark-blue">
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li class=" font_sb hover:text-primary smooth text-dark-blue">
+                            <a href="./index.html">Category</a>
+                        </li>
+                        <li class=" font_sb hover:text-primary smooth text-dark-blue">
+                            <a href="./index.html">About</a>
+                        </li>
+                        <li class=" font_sb hover:text-primary smooth text-dark-blue">
+                            <a href="./index.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div
+                        class=" max-w-[200px] w-full flex gap-3 items-center justify-center rounded-3xl bg-white p-2 px-4">
+                        <i class="bx bx-search text-xl text-gray-500"></i> <input type="search" name=""
+                            placeholder="Search something!" id=""
+                            class="text-sm w-full font_m placeholder:text-xs text-gray-400 outline-none border-0">
+                    </div>
+                    <button class="btn-primary-rounded font_m">Join the community</button>
+                    <div class="flex items-center gap-3">
+                        <img src="./assets/img/us.png" alt="" class=" w-5 h-5 rounded-full object-cover">
+                        <p class=" text-sm text-dark-blue font_m">USA</p>
+                    </div>
+                </div>
+                <div class="responsive_icons ds:flex lg:hidden items-center gap-6">
+
+                    <i class="bx bx-group text-2xl text-dark-blue"></i>
+                    <i class="bx bx-search text-2xl text-dark-blue"></i>
+                    <div id="menu_btn" class="hamburger_menu cursor-pointer">
+                        <i class="bx bx-menu text-2xl text-dark-blue"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="hero-section mx-auto pt-24 container_custom h-auto">
+            <div class="w-full flex ds:flex-col lg:flex-row justify-between">
+                <div class="space-y-6 pt-10 lg:max-w-3xl">
+                    <h1 class=" text-dark-blue text-balance font_sb ds:text-5xl md:text-[55px]"> <span
+                            class="hero-cover">O</span>ne more friend more fun!</h1>
+
+                    <p class=" text-sm font_r text-fade leading-6">
+                        Having a pet means you have more joy, a new friend, a happy person who will always be with you
+                        to have fun. We have 200+ different pets that can meet your needs!</p>
+                    <div class="flex items-center gap-4">
+                        <button class=" btn-primary-rounded font_m smooth">Explore now</button>
+                        <button class=" btn-primary-rounded-outline font_m smooth">
+                            <p>View intro</p> <i class="bx bx-play-circle"></i>
+                        </button>
+                    </div>
+                    <!-- <img src="./assets/img/Partners.png" alt="" class=" w-80"> -->
+                </div>
+                <img src="./assets/img/homepage/hero-img.svg" alt="" class=" lg:max-w-2xl">
+            </div>
+        </div>
+        </div>
+        <div id="responsive_nav" class="fixed smooth top-0 z-xl inactive w-full h-screen bg-dark-blue/45">
+            <div class="max-w-[300px] relative h-full p-3 bg-white shadow-2xl">
+                <button id="toggleres"
+                    class="h-8 w-8 float-end rounded-full bg-gray-500/55 hover:bg-gray-500/45 flex items-center justify-center">
+                    <i class="bx bx-x text-white text-2xl "></i>
+                </button>
+                <nav class="w-full my-4 flex flex-col justify-between gap-6">
+                    <a href="./index.html">
+                        <h1 class=" text-dark-blue font_sb text-3xl">Munito</h1>
+                    </a>
+
+                    <div class="flex-col flex gap-9 ">
+                        <ul class=" list-none text-sm flex flex-col justify-center gap-6">
+                            <li class=" font_m hover:text-primary smooth text-dark-blue">
+                                <a href="./index.html">Home</a>
+                            </li>
+                            <li class=" font_m hover:text-primary smooth text-dark-blue">
+                                <a href="./index.html">Category</a>
+                            </li>
+                            <li class=" font_m hover:text-primary smooth text-dark-blue">
+                                <a href="./index.html">About</a>
+                            </li>
+                            <li class=" font_m hover:text-primary smooth text-dark-blue">
+                                <a href="./index.html">Contact Us</a>
+                            </li>
+                        </ul>
+                        <div
+                            class="  shadow-2xl w-full flex gap-3 items-center justify-center rounded-3xl bg-white p-2 px-4">
+                            <i class="bx bx-search text-xl text-gray-500"></i> <input type="search" name=""
+                                placeholder="Search something!" id=""
+                                class="text-sm w-full font_m placeholder:text-xs text-gray-400 outline-none border-0">
+                        </div>
+                        <button class="btn-primary-rounded font_m">Join the community</button>
+                        <div class="flex items-center gap-3">
+                            <img src="./assets/img/us.png" alt="" class=" w-5 h-5 rounded-full object-cover">
+                            <p class=" text-sm text-dark-blue font_m">USA</p>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </main>
+
+    <section class=" container_custom_sm w-full mx-auto h-auto py-16">
+        <div class="w-full min-h-[70vh]">
+            <div class="space-y-8 w-full">
+                <h1 class="text-fade font_m">What's new?</h1>
+                <div class="w-full flex flex-wrap gap-6 items-center justify-between">
+                    <h1 class="text-dark-blue text-3xl font_sb">Take a look at some of our pets</h1>
+                    <div class="btn-primary-rounded-outline font_m smooth">
+                        <p>View more</p>
+                        <i class=" bx bx-chevron-right"></i>
+                    </div>
+                </div>
+                <section class=" grid-cat-4">
+                    <div
+                        class="rounded-md p-2 space-y-5 shadow-md item h-auto hover:-translate-y-4 w-full item smooth hover:shadow-2xl">
+                        <img src="./assets/img/dogs/dog2.svg" alt="dog photo" class="rounded-md">
+                        <div class="space-y-2 py-4">
+                            <h1 class="font_sb text-dark-blue text-base">MO231 - Pomeranian White</h1>
+                            <div class="w-full flex gap-3 items-center">
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Gender:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">Male</p>
+                                </div>
+                                .
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Age:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">02 Months</p>
+                                </div>
+                            </div>
+                            <h1 class="text-fade font_sb  text-sm">9.000.00 USD</h1>
+                        </div>
+                    </div>
+
+                    <div
+                        class="rounded-md p-2 space-y-5 shadow-md item h-auto hover:-translate-y-4 w-full item smooth hover:shadow-2xl">
+                        <img src="./assets/img/dogs/dog5.svg" alt="dog photo" class="rounded-md">
+                        <div class="space-y-2 py-4">
+                            <h1 class="font_sb text-dark-blue tect-base">MO502 - Poodle Tiny Yellow</h1>
+                            <div class="w-full flex gap-3 items-center">
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Gender:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">Male</p>
+                                </div>
+                                .
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Age:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">02 Months</p>
+                                </div>
+                            </div>
+                            <h1 class="text-fade font_sb  text-sm">7.000.00 USD</h1>
+                        </div>
+                    </div>
+
+                    <div
+                        class="rounded-md p-2 space-y-5 shadow-md item h-auto hover:-translate-y-4 w-full item smooth hover:shadow-2xl">
+                        <img src="./assets/img/dogs/dog4.svg" alt="dog photo" class="rounded-md">
+                        <div class="space-y-2 py-4">
+                            <h1 class="font_sb text-dark-blue tect-base">MO102 - Poodle Tiny Sepia</h1>
+                            <div class="w-full flex gap-3 items-center">
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Gender:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">female</p>
+                                </div>
+                                .
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Age:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">03 Months</p>
+                                </div>
+                            </div>
+                            <h1 class="text-fade font_sb  text-sm">9.000.00 USD</h1>
+                        </div>
+                    </div>
+
+                    <div
+                        class="rounded-md p-2 space-y-5 shadow-md item h-auto hover:-translate-y-4 w-full item smooth hover:shadow-2xl">
+                        <img src="./assets/img/dogs/dog3.svg" alt="dog photo" class="rounded-md">
+                        <div class="space-y-2 py-4">
+                            <h1 class="font_sb text-dark-blue tect-base">MO512 - Alaskan Malamute Grey</h1>
+                            <div class="w-full flex gap-3 items-center">
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Gender:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">Male</p>
+                                </div>
+                                .
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Age:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">04 Months</p>
+                                </div>
+                            </div>
+                            <h1 class="text-fade font_sb  text-sm">5.000.00 USD</h1>
+                        </div>
+                    </div>
+
+                    <div
+                        class="rounded-md p-2 space-y-5 shadow-md item h-auto hover:-translate-y-4 w-full item smooth hover:shadow-2xl">
+                        <img src="./assets/img/dogs/dog1.svg" alt="dog photo" class="rounded-md">
+                        <div class="space-y-2 py-4">
+                            <h1 class="font_sb text-dark-blue tect-base">MO502 - Pembroke Corgi Tricolor</h1>
+                            <div class="w-full flex gap-3 items-center">
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Gender:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">Male</p>
+                                </div>
+                                .
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Age:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">02 Months</p>
+                                </div>
+                            </div>
+                            <h1 class="text-fade font_sb  text-sm">9.000.00 USD</h1>
+                        </div>
+                    </div>
+                    <div
+                        class="rounded-md p-2 space-y-5 shadow-md item h-auto hover:-translate-y-4 w-full item smooth hover:shadow-2xl">
+                        <img src="./assets/img/dogs/dog8.jpg" alt="dog photo" class="rounded-md">
+                        <div class="space-y-2 py-4">
+                            <h1 class="font_sb text-dark-blue tect-base">MO231 - Pembroke Corgi Cream</h1>
+                            <div class="w-full flex gap-3 items-center">
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Gender:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">female</p>
+                                </div>
+                                .
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Age:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">02 Months</p>
+                                </div>
+                            </div>
+                            <h1 class="text-fade font_sb  text-sm">3.000.00 USD</h1>
+                        </div>
+                    </div>
+                    <div
+                        class="rounded-md p-2 space-y-5 shadow-md item h-auto hover:-translate-y-4 w-full item smooth hover:shadow-2xl">
+                        <img src="./assets/img/dogs/dog7.svg" alt="dog photo" class="rounded-md">
+                        <div class="space-y-2 py-4">
+                            <h1 class="font_sb text-dark-blue tect-base">MO102 - Pomeranian Grey</h1>
+                            <div class="w-full flex gap-3 items-center">
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Gender:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">Male</p>
+                                </div>
+                                .
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Age:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">02 Months</p>
+                                </div>
+                            </div>
+                            <h1 class="text-fade font_sb  text-sm">19.000.00 USD</h1>
+                        </div>
+                    </div>
+                    <div
+                        class="rounded-md p-2 space-y-5 shadow-md item h-auto hover:-translate-y-4 w-full item smooth hover:shadow-2xl">
+                        <img src="./assets/img/dogs/dog6.svg" alt="dog photo" class="rounded-md">
+                        <div class="space-y-2 py-4">
+                            <h1 class="font_sb text-dark-blue tect-base">MO512 - Poodle Tiny Dairy</h1>
+                            <div class="w-full flex gap-3 items-center">
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Gender:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">Male</p>
+                                </div>
+                                .
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Age:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">02 Months</p>
+                                </div>
+                            </div>
+                            <h1 class="text-fade font_sb  text-sm">19.000.00 USD</h1>
+                        </div>
+                    </div>
+
+                </section>
+                <!-- <section
+                    class="owl-theme  owl-carousel ds:opacity-100 ds:w-full ds:h-auto  sm:opacity-0 sm:w-0 sm:h-0 sm:hidden">
+                    <div
+                        class="rounded-md p-2 space-y-5 shadow-md item h-auto hover:-translate-y-4 w-full item smooth hover:shadow-2xl">
+                        <img src="./assets/img/dogs/dog2.svg" alt="dog photo" class="rounded-md">
+                        <div class="space-y-2 py-4">
+                            <h1 class="font_sb text-dark-blue text-base">MO231 - Pomeranian White</h1>
+                            <div class="w-full flex gap-3 items-center">
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Gender:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">Male</p>
+                                </div>
+                                .
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Age:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">02 Months</p>
+                                </div>
+                            </div>
+                            <h1 class="text-fade font_sb  text-sm">9.000.00 USD</h1>
+                        </div>
+                    </div>
+
+                    <div
+                        class="rounded-md p-2 space-y-5 shadow-md item h-auto hover:-translate-y-4 w-full item smooth hover:shadow-2xl">
+                        <img src="./assets/img/dogs/dog5.svg" alt="dog photo" class="rounded-md">
+                        <div class="space-y-2 py-4">
+                            <h1 class="font_sb text-dark-blue tect-base">MO502 - Poodle Tiny Yellow</h1>
+                            <div class="w-full flex gap-3 items-center">
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Gender:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">Male</p>
+                                </div>
+                                .
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Age:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">02 Months</p>
+                                </div>
+                            </div>
+                            <h1 class="text-fade font_sb  text-sm">7.000.00 USD</h1>
+                        </div>
+                    </div>
+
+                    <div
+                        class="rounded-md p-2 space-y-5 shadow-md item h-auto hover:-translate-y-4 w-full item smooth hover:shadow-2xl">
+                        <img src="./assets/img/dogs/dog4.svg" alt="dog photo" class="rounded-md">
+                        <div class="space-y-2 py-4">
+                            <h1 class="font_sb text-dark-blue tect-base">MO102 - Poodle Tiny Sepia</h1>
+                            <div class="w-full flex gap-3 items-center">
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Gender:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">female</p>
+                                </div>
+                                .
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Age:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">03 Months</p>
+                                </div>
+                            </div>
+                            <h1 class="text-fade font_sb  text-sm">9.000.00 USD</h1>
+                        </div>
+                    </div>
+
+                    <div
+                        class="rounded-md p-2 space-y-5 shadow-md item h-auto hover:-translate-y-4 w-full item smooth hover:shadow-2xl">
+                        <img src="./assets/img/dogs/dog3.svg" alt="dog photo" class="rounded-md">
+                        <div class="space-y-2 py-4">
+                            <h1 class="font_sb text-dark-blue tect-base">MO512 - Alaskan Malamute Grey</h1>
+                            <div class="w-full flex gap-3 items-center">
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Gender:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">Male</p>
+                                </div>
+                                .
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Age:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">04 Months</p>
+                                </div>
+                            </div>
+                            <h1 class="text-fade font_sb  text-sm">5.000.00 USD</h1>
+                        </div>
+                    </div>
+
+                    <div
+                        class="rounded-md p-2 space-y-5 shadow-md item h-auto hover:-translate-y-4 w-full item smooth hover:shadow-2xl">
+                        <img src="./assets/img/dogs/dog1.svg" alt="dog photo" class="rounded-md">
+                        <div class="space-y-2 py-4">
+                            <h1 class="font_sb text-dark-blue tect-base">MO502 - Pembroke Corgi Tricolor</h1>
+                            <div class="w-full flex gap-3 items-center">
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Gender:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">Male</p>
+                                </div>
+                                .
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Age:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">02 Months</p>
+                                </div>
+                            </div>
+                            <h1 class="text-fade font_sb  text-sm">9.000.00 USD</h1>
+                        </div>
+                    </div>
+                    <div
+                        class="rounded-md p-2 space-y-5 shadow-md item h-auto hover:-translate-y-4 w-full item smooth hover:shadow-2xl">
+                        <img src="./assets/img/dogs/dog8.jpg" alt="dog photo" class="rounded-md">
+                        <div class="space-y-2 py-4">
+                            <h1 class="font_sb text-dark-blue tect-base">MO231 - Pembroke Corgi Cream</h1>
+                            <div class="w-full flex gap-3 items-center">
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Gender:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">female</p>
+                                </div>
+                                .
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Age:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">02 Months</p>
+                                </div>
+                            </div>
+                            <h1 class="text-fade font_sb  text-sm">3.000.00 USD</h1>
+                        </div>
+                    </div>
+                    <div
+                        class="rounded-md p-2 space-y-5 shadow-md item h-auto hover:-translate-y-4 w-full item smooth hover:shadow-2xl">
+                        <img src="./assets/img/dogs/dog7.svg" alt="dog photo" class="rounded-md">
+                        <div class="space-y-2 py-4">
+                            <h1 class="font_sb text-dark-blue tect-base">MO102 - Pomeranian Grey</h1>
+                            <div class="w-full flex gap-3 items-center">
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Gender:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">Male</p>
+                                </div>
+                                .
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Age:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">02 Months</p>
+                                </div>
+                            </div>
+                            <h1 class="text-fade font_sb  text-sm">19.000.00 USD</h1>
+                        </div>
+                    </div>
+                    <div
+                        class="rounded-md p-2 space-y-5 shadow-md item h-auto hover:-translate-y-4 w-full item smooth hover:shadow-2xl">
+                        <img src="./assets/img/dogs/dog6.svg" alt="dog photo" class="rounded-md">
+                        <div class="space-y-2 py-4">
+                            <h1 class="font_sb text-dark-blue tect-base">MO512 - Poodle Tiny Dairy</h1>
+                            <div class="w-full flex gap-3 items-center">
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Gender:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">Male</p>
+                                </div>
+                                .
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Age:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">02 Months</p>
+                                </div>
+                            </div>
+                            <h1 class="text-fade font_sb  text-sm">19.000.00 USD</h1>
+                        </div>
+                    </div>
+
+                </section> -->
+            </div>
+        </div>
+    </section>
+
+    <section class="banner_section w-full min-h-[50vh] mx-auto  my-16">
+        <div class="w-full rounded-md banner ds:h-auto lg:max-h-[390px]">
+
+            <img src="./assets/img/banner.png" alt="" class=" w-90">
+            <div class="space-y-6 pt-10 lg:max-w-3xl ">
+                <h1 class=" text-dark-blue leading-9 text-balance font_sb ds:text-4xl md:text-[55px]"> <span
+                        class="hero-cove">O</span>ne more friend more fun!</h1>
+
+                <p class=" text-xs font_r text-balance text-fade leading-6">
+                    Having a pet means you have more joy, a new friend, a happy person who will always be with you
+                    to have fun. We have 200+ different pets that can meet your needs!</p>
+                <div class="flex items-center gap-4">
+                    <button class=" btn-primary-rounded font_m smooth">Explore now</button>
+                    <button class=" btn-primary-rounded-outline font_m smooth">
+                        <p>View intro</p> <i class="bx bx-play-circle"></i>
+                    </button>
+                </div>
+                <!-- <img src="./assets/img/Partners.png" alt="" class=" w-80"> -->
+            </div>
+        </div>
+    </section>
+
+    <section class=" container_custom_sm w-full mx-auto h-auto py-16">
+        <div class="w-full min-h-[70vh]">
+            <div class="space-y-8 w-full">
+                <h1 class="text-fade font_m">Hard to choose right products for your pets?</h1>
+                <div class="w-full flex flex-wrap gap-6 items-center justify-between">
+                    <h1 class="text-dark-blue text-3xl font_sb">Our Products</h1>
+                    <div class="btn-primary-rounded-outline font_m smooth">
+                        <p>View more</p>
+                        <i class=" bx bx-chevron-right"></i>
+                    </div>
+                </div>
+                <section class=" grid-cat-5">
+                    <div
+                        class="rounded-md p-2 space-y-5 shadow-md item h-auto hover:-translate-y-4 w-full item smooth hover:shadow-2xl">
+                        <img src="./assets/img/products/product-1.png" alt="dog photo" class="rounded-md">
+                        <div class="space-y-2 py-4">
+                            <h1 class="font_sb text-dark-blue text-base">Reflex Plus Adult Dog Salmon</h1>
+                            <div class="w-full flex gap-3 items-center">
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Product:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">Dog food</p>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Size:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">385gm</p>
+                                </div>
+                            </div>
+                            <h1 class="text-fade font_sb  text-sm">165.00 USD</h1>
+                            <button class="w-full p-2 rounded-md bg-light-primary text-xs text-dark-blue font_m">
+                                Bonus on 1st Purchase
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div
+                        class="rounded-md p-2 space-y-5 shadow-md item h-auto hover:-translate-y-4 w-full item smooth hover:shadow-2xl">
+                        <img src="./assets/img/products/product-2.png" alt="dog photo" class="rounded-md">
+                        <div class="space-y-2 py-4">
+                            <h1 class="font_sb text-dark-blue text-base">Reflex Plus Adult Cat Salmon</h1>
+                            <div class="w-full flex gap-3 items-center">
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Product:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">Cat food</p>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Size:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">385gm</p>
+                                </div>
+                            </div>
+                            <h1 class="text-fade font_sb  text-sm">162.00 USD</h1>
+                            <button class="w-full p-2 rounded-md bg-light-primary text-xs text-dark-blue font_m">
+                                Bonus on 1st Purchase
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div
+                        class="rounded-md p-2 space-y-5 shadow-md item h-auto hover:-translate-y-4 w-full item smooth hover:shadow-2xl">
+                        <img src="./assets/img/products/product-3.png" alt="dog photo" class="rounded-md">
+                        <div class="space-y-2 py-4">
+                            <h1 class="font_sb text-dark-blue text-base">Cat scratching ball toy kitten sisal rope ball
+                            </h1>
+                            <div class="w-full flex gap-3 items-center">
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Product:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">Toy</p>
+                                </div>
+
+                            </div>
+                            <h1 class="text-fade font_sb  text-sm">265.00 USD</h1>
+                            <button class="w-full p-2 rounded-md bg-light-primary text-xs text-dark-blue font_m">
+                                Bonus on 1st Purchase
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div
+                        class="rounded-md p-2 space-y-5 shadow-md item h-auto hover:-translate-y-4 w-full item smooth hover:shadow-2xl">
+                        <img src="./assets/img/products/product-4.png" alt="dog photo" class="rounded-md">
+                        <div class="space-y-2 py-4">
+                            <h1 class="font_sb text-dark-blue text-base">Cute Pet Cat Warm Nest</h1>
+                            <div class="w-full flex gap-3 items-center">
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Product:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">Toy</p>
+                                </div>
+
+                            </div>
+                            <h1 class="text-fade font_sb  text-sm">305.00 USD</h1>
+                            <button class="w-full p-2 rounded-md bg-light-primary text-xs text-dark-blue font_m">
+                                Bonus on 1st Purchase
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div
+                        class="rounded-md p-2 space-y-5 shadow-md item h-auto hover:-translate-y-4 w-full item smooth hover:shadow-2xl">
+                        <img src="./assets/img/products/product-5.png" alt="dog photo" class="rounded-md">
+                        <div class="space-y-2 py-4">
+                            <h1 class="font_sb text-dark-blue text-base">NaturVet Dogs - Omega-Gold Plus Salmon Oil</h1>
+                            <div class="w-full flex gap-3 items-center">
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Product:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">Dog food</p>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Size:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">385gm</p>
+                                </div>
+
+                            </div>
+                            <h1 class="text-fade font_sb  text-sm">175.00 USD</h1>
+                            <button class="w-full p-2 rounded-md bg-light-primary text-xs text-dark-blue font_m">
+                                Bonus on 1st Purchase
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div
+                        class="rounded-md p-2 space-y-5 shadow-md item h-auto hover:-translate-y-4 w-full item smooth hover:shadow-2xl">
+                        <img src="./assets/img/products/product-6.png" alt="dog photo" class="rounded-md">
+                        <div class="space-y-2 py-4">
+                            <h1 class="font_sb text-dark-blue text-base">Costumes Fashion Pet Clother Cowboy Rider</h1>
+                            <div class="w-full flex gap-3 items-center">
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Product:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">Costume</p>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Size:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">1.5kg</p>
+                                </div>
+
+                            </div>
+                            <h1 class="text-fade font_sb  text-sm">175.00 USD</h1>
+                            <button class="w-full p-2 rounded-md bg-light-primary text-xs text-dark-blue font_m">
+                                Bonus on 1st Purchase
+                            </button>
+                        </div>
+                    </div>
+
+
+
+
+                    <div
+                        class="rounded-md p-2 space-y-5 shadow-md item h-auto hover:-translate-y-4 w-full item smooth hover:shadow-2xl">
+                        <img src="./assets/img/products/product-7.png" alt="dog photo" class="rounded-md">
+                        <div class="space-y-2 py-4">
+                            <h1 class="font_sb text-dark-blue text-base">Costumes Chicken Drumsti ck Headband</h1>
+                            <div class="w-full flex gap-3 items-center">
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Product:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">Costume</p>
+                                </div>
+
+
+                            </div>
+                            <h1 class="text-fade font_sb  text-sm">100.00 USD</h1>
+                            <button class="w-full p-2 rounded-md bg-light-primary text-xs text-dark-blue font_m">
+                                Bonus on 1st Purchase
+                            </button>
+                        </div>
+                    </div>
+
+
+
+                    <div
+                        class="rounded-md p-2 space-y-5 shadow-md item h-auto hover:-translate-y-4 w-full item smooth hover:shadow-2xl">
+                        <img src="./assets/img/products/product-8.png" alt="dog photo" class="rounded-md">
+                        <div class="space-y-2 py-4">
+                            <h1 class="font_sb text-dark-blue text-base">Plush Pet Toy</h1>
+                            <div class="w-full flex gap-3 items-center">
+                                <div class="flex items-center gap-2">
+                                    <p class=" text-dark-blue font_r text-xs">Product:</p>
+                                    <p class=" text-dark-blue font_m font_m text-xs">Toy</p>
+                                </div>
+
+
+                            </div>
+                            <h1 class="text-fade font_sb  text-sm">85.00 USD</h1>
+                            <button class="w-full p-2 rounded-md bg-light-primary text-xs text-dark-blue font_m">
+                                Bonus on 1st Purchase
+                            </button>
+                        </div>
+                    </div>
+
+
+                </section>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class=" container_custom_sm w-full mx-auto h-auto py-16">
+        <div class="w-full min-h-[50vh]">
+            <div class="space-y-8 w-full">
+                <h1 class="text-fade font_m">Proud to be a part of us?</h1>
+                <div class="w-full flex flex-wrap gap-6 items-center justify-between">
+                    <h1 class="text-dark-blue text-3xl font_sb">Our Partners</h1>
+                    <div class="btn-primary-rounded-outline font_m smooth">
+                        <p>View all our partners</p>
+                        <i class=" bx bx-chevron-right"></i>
+                    </div>
+                </div>
+                <img src="./assets/img/Partners.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="adopt_section w-full min-h-[50vh] mx-auto  my-16">
+        <div class="w-full rounded-md banner ds:h-auto lg:max-h-[390px]">
+
+
+            <div class="space-y-6 pt-10 lg:max-w-3xl">
+                <h1 class=" text-dark-blue text-balance font_sb ds:text-5xl md:text-[50px]">Adoption - we need help, so
+                    do they </h1>
+
+                <p class=" text-sm font_r text-fade leading-6">Adopt a pet and give it a home,
+                    it will be love you back unconditionally.
+                </p>
+                <div class="flex items-center gap-4">
+                    <button class=" btn-primary-rounded font_m smooth">Explore now</button>
+                    <button class=" btn-primary-rounded-outline font_m smooth">
+                        <p>View intro</p> <i class="bx bx-play-circle"></i>
+                    </button>
+                </div>
+                <!-- <img src="./assets/img/Partners.png" alt="" class=" w-80"> -->
+            </div>
+            <img src="./assets/img/adopt.png" alt="" class="">
+        </div>
+    </section>
+
+    <section class=" container_custom_sm w-full mx-auto h-auto py-16">
+        <div class="w-full min-h-[70vh]">
+            <div class="space-y-8 w-full">
+                <h1 class="text-fade font_m">You already know?</h1>
+                <div class="w-full flex flex-wrap gap-6 items-center justify-between">
+                    <h1 class="text-dark-blue text-3xl font_sb">Pet Knowledge</h1>
+                    <div class="btn-primary-rounded-outline font_m smooth">
+                        <p>Read More</p>
+                        <i class=" bx bx-chevron-right"></i>
+                    </div>
+                </div>
+
+                <section class=" grid-cat-3">
+                    <div
+                        class="rounded-md p-2 space-y-5 shadow-md item h-auto hover:-translate-y-4 w-full item smooth hover:shadow-2xl">
+                        <img src="./assets/img/dogs/blog-2.png" alt="dog photo" class="rounded-md">
+                        <div class="space-y-2 py-4">
+                            <div class="badge font_m">
+                                pet knowledge
+                            </div>
+                            <h1 class="font_sb text-dark-blue text-sm">What is a Pomeranian? How to Identify Pomeranian
+                                Dogs</h1>
+                            <p class="font_r text-xs text-gray-500 leading-5">
+
+                                The Pomeranian, also known as the Pomeranian (Pom dog), is always in the top of the
+                                cutest pets. Not only that, the small, lovely, smart, friendly, and skillful circus dog
+                                breed.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div
+                        class="rounded-md p-2 space-y-5 shadow-md item h-auto hover:-translate-y-4 w-full item smooth hover:shadow-2xl">
+                        <img src="./assets/img/dogs/blog-1.png" alt="dog photo" class="rounded-md">
+                        <div class="space-y-2 py-4">
+                            <div class="badge font_m">
+                                pet knowledge
+                            </div>
+                            <h1 class="font_sb text-dark-blue text-sm">Dog Diet You Need To Know</h1>
+                            <p class="font_r text-xs text-gray-500 leading-5">
+                                Dividing a dog's diet may seem simple at first, but there are some rules you should know
+                                so that your dog can easily absorb the nutrients in the diet. For those who are just
+                                starting to raise dogs, especially newborn puppies with relatively weak resistance.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div
+                        class="rounded-md p-2 space-y-5 shadow-md item h-auto hover:-translate-y-4 w-full item smooth hover:shadow-2xl">
+                        <img src="./assets/img/dogs/blog-3.png" alt="dog photo" class="rounded-md">
+                        <div class="space-y-2 py-4">
+                            <div class="badge font_m">
+                                pet knowledge
+                            </div>
+                            <h1 class="font_sb text-dark-blue text-sm">
+                                Why Dogs Bite and Destroy Furniture and How to Prevent It Effectively
+                            </h1>
+
+                            <p class="font_r text-xs text-gray-500 leading-5">
+
+                                Dog bites are common during development. However, no one wants to see their furniture or
+                                important items being bitten by a dog.
+                            </p>
+
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="w-full min-h-[60vh] flex items-center justify-center footer_rounded bg-light-primary">
+        <div class=" w-full mx-auto max-w-[88%] h-auto p-5">
+            <div class="w-full py-6 space-y-8">
+                <div class="w-full p-4 px-7 rounded-md h-auto bg-dark-blue flex items-center flex-wrap gap-4 justify-between">
+                    <h1 class="text-white max-w-sm text-lg font_sb">Register now so you dont miss our programs</h1>
+                     <form class="flex-grow p-2 px-4 flex items-center gap-3 md:flex-nowrap ds:flex-wrap  rounded-3xl bg-white">
+                        <input type="email" placeholder="Enter Your email" name="email" id="email" class="text-xs font_m w-full rounded-md p-3 border outline-none border-gray-400">
+                        <button type="submit" class="btn-primary font_m md:w-auto ds:w-full">Subscribe</button>
+                     </form>
+                </div>
+                <div class="w-full flex flex-wrap gap-4 sm:items-center justify-between">
+                    <ul class=" list-none text-sm px-5 flex items-center justify-center gap-6">
+                        <li class=" font_sb hover:text-primary smooth text-dark-blue">
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li class=" font_sb hover:text-primary smooth text-dark-blue">
+                            <a href="./index.html">Category</a>
+                        </li>
+                        <li class=" font_sb hover:text-primary smooth text-dark-blue">
+                            <a href="./index.html">About</a>
+                        </li>
+                        <li class=" font_sb hover:text-primary smooth text-dark-blue">
+                            <a href="./index.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div class="flex items-center justify-center gap-5 text-2xl text-dark-blue">
+                        <i class=" bx bxl-facebook"></i>
+                        <i class=" bx bxl-twitter"></i>
+                        <i class=" bx bxl-instagram"></i>
+                        <i class=" bx bxl-youtube"></i>
+                        <i class=" bx bxl-github"></i>
+                    </div>
+                </div>
+                <div class="bg-gray-500 h-[0.5px] w-full"></div>
+                <div class="w-full flex items-center justify-between gap-3 flex-wrap">
+                    <p class=" font_r text-sm text-gray-500 ">@2024 Puppiez. All rights reserved</p>
+                    <a href="./index.html">
+                        <h1 class=" text-dark-blue font_sb text-3xl">Munito</h1>
+                    </a>
+                    <div class="flex items-center gap-3">
+                        <p class=" font_r text-sm text-gray-500 ">Privacy Policy</p>
+                        <p class=" font_r text-sm text-gray-500 ">Terms Of service</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- <div class="owl-carousel owl-theme">
+            <div class="item">
+              <h4>1</h4>
+            </div>
+            <div class="item">
+              <h4>2</h4>
+            </div>
+            <div class="item">
+              <h4>3</h4>
+            </div>
+            <div class="item">
+              <h4>4</h4>
+            </div>
+            <div class="item">
+              <h4>5</h4>
+            </div>
+            <div class="item">
+              <h4>6</h4>
+            </div>
+            <div class="item">
+              <h4>7</h4>
+            </div>
+            <div class="item">
+              <h4>8</h4>
+            </div>
+            <div class="item">
+              <h4>9</h4>
+            </div>
+            <div class="item">
+              <h4>10</h4>
+            </div>
+            <div class="item">
+              <h4>11</h4>
+            </div>
+            <div class="item">
+              <h4>12</h4>
+            </div>
+          </div> -->
+
     <!-- <div id="nav-links" class=""></div> -->
     <!-- 
      npx tailwindcss -i ./dist/tailwind/input.css -o ./dist/tailwind/output.css --watch -->
-    <script src="/dist/js/Jquery.js"></script>
-    <script src="/dist/js/script.js"></script>
-    <!-- <script src="/dist/js/boxicons.js"></script> -->
+    <script src="./dist/js/Jquery.js"></script>
+    <script src="./dist/js/script.js"></script>
+    <script src="./dist/js/owl.carousel.js"></script>
+    <script src="./dist/js/boxicons.js"></script>
+
+    <script>
+
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            margin: 10,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 2,
+                    nav: false
+                },
+                1000: {
+                    items: 5,
+                    nav: true,
+                    loop: false
+                }
+            }
+        })
+    </script>
 </body>
 
 </html>
