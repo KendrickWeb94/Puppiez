@@ -23,7 +23,7 @@
         <header class="py-3 relative z-lg container_custom mx-auto flex items-center ">
             <nav class="w-full absolute top-0 my-4 flex items-center justify-between gap-3">
                 <a href="./index.html">
-                    <h1 class=" text-dark-blue font_sb text-3xl">Munito</h1>
+                    <img src="./assets/img/logo.svg" alt="">
                 </a>
 
                 <div class="items-center gap-6 ds:hidden lg:flex">
@@ -92,7 +92,7 @@
                 </button>
                 <nav class="w-full my-4 flex flex-col justify-between gap-6">
                     <a href="./index.html">
-                        <h1 class=" text-dark-blue font_sb text-3xl">Munito</h1>
+                        <img src="./assets/img/logo.svg" alt="">
                     </a>
 
                     <div class="flex-col flex gap-9 ">
@@ -694,31 +694,19 @@
                         <i class=" bx bx-chevron-right"></i>
                     </div>
                 </div>
-                <img src="./assets/img/Partners.png" alt="">
-            </div>
-        </div>
-    </section>
-
-    <section class="adopt_section w-full min-h-[50vh] mx-auto  my-16">
-        <div class="w-full rounded-md banner ds:h-auto lg:max-h-[390px]">
-
-
-            <div class="space-y-6 pt-10 lg:max-w-3xl">
-                <h1 class=" text-dark-blue text-balance font_sb ds:text-5xl md:text-[50px]">Adoption - we need help, so
-                    do they </h1>
-
-           
-                <div class="flex items-center gap-4">
-                    <button class=" btn-primary-rounded font_m smooth">Explore now</button>
-                    <button class=" btn-primary-rounded-outline font_m smooth">
-                        <p>View intro</p> <i class="bx bx-play-circle"></i>
-                    </button>
+                <div class="flex w-full justify-between flex-wrap gap-3">
+                    <img src="./assets/img/partners/Frame 34.png" alt="" class="w-32">
+                    <img src="./assets/img/partners/Frame 35.png" alt="" class="w-32">
+                    <img src="./assets/img/partners/Frame 36.png" alt="" class="w-32">
+                    <img src="./assets/img/partners/Frame 37.png" alt="" class="w-32">
+                    <img src="./assets/img/partners/Frame 38.png" alt="" class="w-32">
+                    <img src="./assets/img/partners/Frame 39.png" alt="" class="w-32">
+                    <img src="./assets/img/partners/Frame 41.png" alt="" class="w-32">
                 </div>
-                <!-- <img src="./assets/img/Partners.png" alt="" class=" w-80"> -->
             </div>
-            <img src="./assets/img/adopt.png" alt="" class="">
         </div>
     </section>
+
 
     <section class=" container_custom_sm w-full mx-auto h-auto py-16">
         <div class="w-full min-h-[70vh]">
@@ -793,18 +781,21 @@
     </section>
 
     <!-- Your HTML file -->
- <i class=""></i>
-<!-- SVG file for a single icon -->
+    <i class=""></i>
+    <!-- SVG file for a single icon -->
 
     <footer class="w-full min-h-[60vh] flex items-center justify-center footer_rounded bg-light-primary">
         <div class=" w-full mx-auto max-w-[88%] h-auto p-5">
             <div class="w-full py-6 space-y-8">
-                <div class="w-full p-4 px-7 rounded-md h-auto bg-dark-blue flex items-center flex-wrap gap-4 justify-between">
+                <div
+                    class="w-full p-4 px-7 rounded-md h-auto bg-dark-blue flex items-center flex-wrap gap-4 justify-between">
                     <h1 class="text-white max-w-sm text-lg font_sb">Register now so you dont miss our programs</h1>
-                     <form class="flex-grow p-2 px-4 flex items-center gap-3 md:flex-nowrap ds:flex-wrap  rounded-3xl bg-white">
-                        <input type="email" placeholder="Enter Your email" name="email" id="email" class="text-xs font_m w-full rounded-md p-3 border outline-none border-gray-400">
+                    <form
+                        class="flex-grow p-2 px-4 flex items-center gap-3 md:flex-nowrap ds:flex-wrap  rounded-3xl bg-white">
+                        <input type="email" placeholder="Enter Your email" name="email" id="email"
+                            class="text-xs font_m w-full rounded-md p-3 border outline-none border-gray-400">
                         <button type="submit" class="btn-primary font_m md:w-auto ds:w-full">Subscribe</button>
-                     </form>
+                    </form>
                 </div>
                 <div class="w-full flex flex-wrap gap-4 sm:items-center justify-between">
                     <ul class=" list-none text-sm px-5 flex items-center justify-center gap-6">
@@ -833,7 +824,7 @@
                 <div class="w-full flex items-center justify-between gap-3 flex-wrap">
                     <p class=" font_r text-sm text-gray-500 ">@2024 Puppiez. All rights reserved</p>
                     <a href="./index.html">
-                        <h1 class=" text-dark-blue font_sb text-3xl">Munito</h1>
+                        <img src="./assets/img/logo.svg" alt="">
                     </a>
                     <div class="flex items-center gap-3">
                         <p class=" font_r text-sm text-gray-500 ">Privacy Policy</p>
@@ -886,13 +877,36 @@
     <!-- <div id="nav-links" class=""></div> -->
     <!-- 
      npx tailwindcss -i ./dist/tailwind/input.css -o ./dist/tailwind/output.css --watch -->
+    <script>
+
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 1000,
+            autoplayHoverPause: true,
+            margin: 10,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 2,
+                    nav: true
+                },
+                600: {
+                    items: 4,
+                    nav: false
+                },
+                1000: {
+                    items: 5,
+                    nav: true,
+                    loop: false
+                }
+            }
+        })
+    </script>
     <script src="./dist/js/Jquery.js"></script>
     <script src="./dist/js/script.js"></script>
     <script src="./dist/js/owl.carousel.js"></script>
     <script src="./dist/js/boxicons.js"></script>
-    <script src="./node_modules/lucide-static/dist/cjs/lucide-static.js"></script>
-    <script src="./node_modules/lucide-static/dist/esm/lucide-static.js"></script>
-    <script src="./node_modules/lucide-static/dist/cjs/lucide-static.js.map"></script>
 
     <script>
 
@@ -923,4 +937,3 @@
 </body>
 
 </html>
-
